@@ -28,3 +28,18 @@ Content-Type: application/json
 
 
 ###
+
+GET http://localhost:8080/error
+Accept: application/json
+###
+
+GET http://localhost:8080/error/8054
+Accept: application/json
+
+###
+
+
+GET http://localhost:8080/error/iae
+Accept: application/json
+
+###
