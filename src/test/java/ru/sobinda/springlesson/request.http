@@ -11,7 +11,18 @@ POST http://localhost:8080/hello
 Content-Type: application/json
 
 {
-  "name": "Dmitrii",
+  "name": "   ",
+  "age" : -27
+}
+
+
+###
+
+POST http://localhost:8080/hello
+Content-Type: application/json
+
+{
+  "name": "Дмитрий",
   "age" : 27
 }
 

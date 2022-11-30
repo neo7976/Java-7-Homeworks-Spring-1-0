@@ -1,6 +1,7 @@
 package ru.sobinda.springlesson.controller;
 
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 import ru.sobinda.springlesson.domain.Person;
 
@@ -31,7 +32,7 @@ public class HelloController {
 //    }
 
     @PostMapping("/hello")
-    private String hello(@RequestBody Person guest) {
+    private String hello(@RequestBody @Validated Person guest) {
         return String.format("Hello from %s to name %s age %d", from, guest.getName(), guest.getAge());
     }
 
